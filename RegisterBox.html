@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<title>Just 1 time, alway comfortable</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/loginbox.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/angularjs/angular.min.js"></script>
+    <script src="vendor/jssor/jssor.slider-27.5.0.min.js"></script>
+    <script src="vendor/jssor/jssor1.js"></script>
+    <script type="text/javascript">
+    	function formvalid(){
+    		f = document.tenform;
+    		var kiemtra_phone = /^(0\d{9,10})$/;
+			var kiemtra_mail = /^[a-zA-Z]\w*\@\w+(\.\w{2,3})+$/;
+			if(f.txtusername.value == ""){
+			alert("Username can't be empty");
+			f.txtusername.focus();
+			return false;
+			}
+			if(f.txtpassword.value == ""){
+			alert("Password can't be empty");
+			f.txtpassword.focus();
+			return false;
+			}
+			if(f.txtpassword.value.length < 6){
+			alert("Password must be more than 6 characters");
+			f.txtcomfirmpassword.focus();
+			return false;
+			}
+			if(f.txtpassword.value != f.txtcomfirmpassword.value){
+			alert("Password doesn't math");
+			f.txtcomfirmpassword.focus();
+			return false;
+			}
+			if(f.txtfirstname.value == ""){
+			alert("First name can't be empty");
+			f.txtfirstname.focus();
+			return false;
+			}
+			if(f.txtlastname.value == ""){
+			alert("Last name can't be empty");
+			f.txtlastname.focus();
+			return false;
+			}
+			if(f.txtarea.value == ""){
+			alert("Address can't be empty");
+			f.txtarea.focus();
+			return false;
+			}
+			if(kiemtra_mail.test(f.txtemail.value) == false){
+			alert("Email is invalid");
+			f.txtemail.focus();
+			return false;
+			}
+			if(kiemtra_phone.test(f.txtphone.value) == false){
+			alert("Phone number is invalid");
+			f.txtphone.focus();
+			return false;
+			}
+			alert("Welcome " + f.txtfirstname.value + "" + f.txtlastname.value + ",You have successfully registered");
+    	}
+    </script>
+<body>
+	<div class="navbar">
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                        <div class="redcards">
+                            <a class="navbar-brand" href="index.html">Red Cards Limited</a>
+                            <a href="index.html" class="logoAtNav"><img alt="" src="img/logo.png" width="50px" height="50px"/></a>
+                        </div>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                        </ul>
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="I'm shopping for..." id="lgSearch">
+                                </div>
+                                    <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true" id="btSearch"></span></button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Aboutus.html">About Us</a></li>
+                                <li><a href="Contactus.html">Contact Us</a></li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn"><span class="glyphicon glyphicon-glyphicon glyphicon-user" aria-hidden="true"> </span><span id="canasta"> Account</span></a>
+                                        <div class="dropdown-content">
+                                            <a href="LoginBox.html">Log in</a>
+                                            <a href="RegisterBox.html">Register</a>
+                                        </div>
+                                </li>
+                                <li><a href="#"></a></li>
+                                <li><a href="Cart.html"><span class="glyphicon glyphicon-shopping-cart icono" aria-hidden="true"></span><span id="canasta"> Cart <span class="badge badge-danger">3</span></span></a></li>
+                            </ul>
+                    </div>
+
+                    <!-- /.navbar-collapse -->
+                </div>
+                        <!-- /.container-fluid -->
+            </nav>
+    </div>
+	<div class="Registerbox">
+		<img src="img/avatar.png" class="avatar">
+			<h1>Register</h1>
+			<form action="" method="post" name="tenform" class="registrationform" id="tenform" onsubmit="return formvalid();">
+				<table width="100%">
+					<tr>
+				      <td colspan="2"><h3>Registration Form</h3></td>
+			        </tr>
+					<tr>
+						<td style="padding-left: 7%; width: 25%;">Username</td>
+						<td style="padding-left: 1%; padding-right: 5%"><input type="text" name="txtusername" id="txtusername" placeholder="Enter Username"></td>
+
+					</tr>
+					<tr>
+						<td style="padding-left: 7%; width: 25%;">Password</td>
+						<td style="padding-left: 1%; padding-right: 5%"><input type="password" name="txtpassword" id="txtpassword" placeholder="Enter Password"></td>
+					</tr>
+					<tr>
+						<td style="padding-left: 5%; width: 25%;">Comfirm Password</td>
+						<td style="padding-left: 1%; padding-right: 5%"><input type="password" name="txtcomfirmpassword" id="txtcomfirmpassword" placeholder="Enter Password"></td>
+					</tr>
+					<tr>
+				      <td colspan="2"><h3>Option Information</h3></td>
+			        </tr>
+			        <tr>
+						<td style="padding-left: 7%; width: 25%;">First Name</td>
+						<td style="padding-left: 1%; padding-right: 5%"><input type="text" name="txtfirstname" id="txtfirstname" placeholder="Enter Your First Name"></td>
+					</tr>
+					<tr>
+						<td style="padding-left: 7%; width: 25%;">Last Name</td>
+						<td style="padding-left: 1%; padding-right: 5%"><input type="text" name="txtlastname" id="txtlastname" placeholder="Enter Your First Name"></td>
+					</tr>
+					<tr>
+						<td style="padding-left: 7%; width: 25%;">Address</td>
+						<td style="padding-left: 1%; padding-right: 5%;"><input type="text" name="txtarea" id="txtarea" placeholder="Enter Your Address"></textarea></td>
+					</tr>
+					<tr>
+						<td style="padding-left: 7%; width: 25%;">Email</td>
+						<td style="padding-left: 1%; padding-right: 5%"><input type="text" name="txtemail" id="txtemail" placeholder="Enter Your Email"></td>
+					</tr>
+					<tr>
+						<td style="padding-left: 7%; width: 25%;">Phone Number</td>
+						<td style="padding-left: 1%; padding-right: 5%"><input type="text" name="txtphone" id="txtphone" placeholder="Enter Your Phone"></td>
+					</tr>
+
+				</table>
+				<div><input type="submit" name="btnsubmit" id="btnsubmit" value="Register"></div>
+				<div><h5 style="text-align: center;">&copy Red Cards Limited</h5></div>
+			</form>
+			
+    </div>
+    <!--Footer-->
+    
+</body>
+</head>
+</html>

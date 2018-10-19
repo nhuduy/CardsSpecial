@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<title>Login Form Design</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/loginbox.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/angularjs/angular.min.js"></script>
+    <script src="vendor/jssor/jssor.slider-27.5.0.min.js"></script>
+    <script src="vendor/jssor/jssor1.js"></script>
+<body>
+	<div class="navbar">
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                        <div class="redcards">
+                            <a class="navbar-brand" href="index.html">Red Cards Limited</a>
+                            <a href="index.html" class="logoAtNav"><img alt="" src="img/logo.png" width="50px" height="50px"/></a>
+                        </div>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                        </ul>
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="I'm shopping for..." id="lgSearch">
+                                </div>
+                                    <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true" id="btSearch"></span></button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Aboutus.html">About Us</a></li>
+                                <li><a href="Contactus.html">Contact Us</a></li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn"><span class="glyphicon glyphicon-glyphicon glyphicon-user" aria-hidden="true"> </span><span id="canasta"> Account</span></a>
+                                        <div class="dropdown-content">
+                                            <a href="LoginBox.html">Log in</a>
+                                            <a href="RegisterBox.html">Register</a>
+                                        </div>
+                                </li>
+                                <li><a href="#"></a></li>
+                                <li><a href="Cart.html"><span class="glyphicon glyphicon-shopping-cart icono" aria-hidden="true"></span><span id="canasta"> Cart <span class="badge badge-danger">3</span></span></a></li>
+                            </ul>
+                    </div>
+
+                    <!-- /.navbar-collapse -->
+                </div>
+                        <!-- /.container-fluid -->
+            </nav>
+    </div>
+	<div class="loginbox">
+		<img src="img/avatar.png" class="avatar">
+			<h1>Login Here</h1>
+			<form>
+				<p>Username</p>
+				<input type="text" name="" placeholder="Enter Username">
+				<p>Password</p>
+				<input type="password" name="" placeholder="Enter Password">
+				<input type="submit" name="" value="Login">
+				<a href="#">Lost your password?</a><br>
+				<a href="Registerbox.html">Don't have an account?</a>
+			</form>
+	<br>
+	<h5 style="text-align: center;">&copy Red Cards Limited</h5>
+    </div>
+    <!--Footer-->
+    
+</body>
+</head>
+</html>

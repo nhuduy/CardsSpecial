@@ -1,0 +1,411 @@
+div{
+    border:solid 0px RED;
+    }
+
+.list-group-item list-group-item-action active{
+    background-color: black;
+}
+.ecard-player{
+    width: 60%;
+    height: 60%;
+    }
+
+.logo{
+    margin: 30px 30px 30px 0px;
+    }
+.redcards{
+	margin: 0;
+    padding: 0;
+}
+#logoRedCard{
+    width: 30px;
+    height: 30px;
+}
+
+/*.navbar{
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar2{
+    
+}
+*/    
+ 
+
+.product{
+    width:100%;
+    width: 350px;
+    height: 250px;
+    margin: 25px 15px 0px 0px;
+    }
+
+.productname{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.productbutton{
+    text-align: center;
+}
+ 
+.footer{
+    padding: 10px; /* Some padding */
+    text-align: center; /* Center text*/
+}
+
+/*.jumbotron {         /* 1 class in footer */
+    /*text-center: margin-bottom: 0;
+}*/ 
+
+.container{
+    padding: 10px;
+}
+
+
+#map {              /* Google Map */
+    width:590px;
+    height:440px;
+    border: 1px solid #000; 
+}       
+
+#myMap{             /*Bing Map*/
+    position:relative;
+    margin-bottom:0; 
+    width:590px; 
+    height:440px;
+    border: 1px solid;
+}
+
+
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+#origin-input,
+#destination-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 200px;
+    }
+
+#origin-input:focus,
+#destination-input:focus {
+    border-color: #4d90fe;
+    }
+
+#mode-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    margin-left: 12px;
+    padding: 5px 11px 0px 11px;
+    }
+
+#mode-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    }
+
+#btSearch{
+    padding: 4px;
+
+}
+
+#lgSearch{
+    margin-left: 60px;
+    width: 350px;
+}
+
+.logoAtNav {
+  @elementHeight: 32px;
+  padding: ((@navbarHeight - @elementHeight) / 2 - 2) 20px ((@navbarHeight - @elementHeight) / 2 + 2);
+}
+
+/*Start jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+.jssorl-009-spin{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    text-align:center;
+    background-color:rgba(0,0,0,0.7);
+}
+
+
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.productview{
+            width:100%;
+            width: 550px;
+            height: 450px;
+            margin: 25px 15px 0px 0px;
+        }
+table{
+    margin-top: 25px;
+}
+.test{
+    text-align: center;
+}
+#borderAboutUs{
+    border: 1px rgba(91, 153, 189, 0.75) solid;
+    background-color: #F9F1E4;
+    margin-bottom: 3%;
+}
+.aboutUstitle{
+    color: #1d5678;
+    padding-left: 10%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.aboutUsContent{
+    color: #D09292;
+    padding-left: 20%;
+    padding-right: 18%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.aboutUsImg{
+    padding-left: 20%;
+}
+.aboutUsImg2{
+    width: 850px;
+    height: 400px;
+    padding-left: 25%;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+    }
+
+/*jssor slider bullet skin 051 css*/
+.jssor_1{
+    position:relative;
+    margin:0 auto;
+    top:0px;
+    left:0px;
+    width:980px;
+    height:380px;
+    overflow:hidden;
+    visibility:hidden;
+}
+
+.jssorb051 .i {
+    position:absolute;
+    cursor:pointer;
+    bottom:12px;
+    right:12px;
+}
+.jssorb051 .i .b {
+    fill:#fff;
+    fill-opacity:0.5;
+}
+.jssorb051 .i:hover .b {
+    fill-opacity:.7;
+}
+.jssorb051 .iav .b {
+    fill-opacity: 1;
+}
+.jssorb051 .i.idn {
+    opacity:.3;
+}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {
+    display:block;
+    position:absolute;
+    cursor:pointer;
+}
+.jssora051 .a {
+    fill:none;
+    stroke:#fff;
+    stroke-width:360;
+    stroke-miterlimit:10;
+}
+.jssora051:hover {
+    opacity:.8;
+}
+.jssora051.jssora051dn {
+    opacity:.5;
+}
+.jssora051.jssora051ds {
+    opacity:.3;
+    pointer-events:none;
+}
+/*End jssor slider loading skin spin css*/
+
+/*Cart*/
+#bordercart{
+    background: #000;
+	background: rgb(0,0,0,.6);
+    margin: 1% 11% 6% 11%;
+	color: #fff;
+}
+.cartbox {
+    margin-bottom: 20px;
+}
+#Cartpic1{
+    width: 130px;
+    height: 130px;
+    padding: 5%;
+}
+.price2{
+    text-decoration: line-through;
+    color: white;
+}
+.cartlink {
+	color: white;
+}
+.cartlink:hover {
+	color: darkgray;
+}
+.cartdellink {
+	color: indianred;
+}
+.cartdellink:hover {
+	color: darkgray;
+}
+.yourmessage {
+	color: black;
+	width: 100%;
+}
+.totalprice {
+	text-align: right;
+	color: white;
+	font-weight: bold;
+}
+/*End Cart*/
+

@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+/*Loginbox CSS*/
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../img/pic1.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.Registerbox{
+    width: 1000px;
+    height: 835px;
+    background: #000;
+	background: rgb(0,0,0,.6);
+    color: #fff;
+    top: 61%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-top: 3%;
+}
+.loginbox{
+    width: 500px;
+    height: 500px;
+    background: #000;
+    background: rgb(0,0,0,.6);
+    color: #fff;
+    top: 61%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+}
+
+.Registerbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.Registerbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Registerbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.Registerbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.Registerbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.Registerbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.Registerbox a:hover
+{
+    color: #ffc107;
+}
+.loginbox a:hover
+{
+    color: #ffc107;
+}

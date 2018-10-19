@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Halloween</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/angularjs/angular.min.js"></script>
+    <script src="vendor/jssor/jssor.slider-27.5.0.min.js"></script>
+    <script src="vendor/jssor/jssor1.js"></script>
+</head>
+<body ng-app="myapp">
+<div ng-view>
+<script>
+    var app = angular.module("myapp", ["ngRoute"]);
+    app.config(function($routeProvider) {
+        $routeProvider
+        .when("/", {
+            templateUrl: "index.html"
+        })
+        .when("/contactus", {
+            templateUrl: "contactus.html"
+        })
+        .when("/Christmast", {
+            templateUrl: "Christmast.html"
+        })
+        .when("/FatherMother", {
+            templateUrl: "FatherMother"
+        })
+        .when("/Halloween", {
+            templateUrl: "Halloween.html"
+        })
+        .when("/Lunar", {
+            templateUrl: "Lunar.html"
+        })
+        .when("/Paris", {
+            templateUrl: "Paris.html"
+        })
+        .when("/Scotland", {
+            templateUrl: "Scotland.html"
+        })
+        .when("/Silvia", {
+            templateUrl: "Silvia.html"
+        })
+        .when("/Valentines", {
+            templateUrl: "Valentines.html"
+        })
+    });
+</script>
+    <div class="navbar">
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                        <div class="redcards">
+                            <a class="navbar-brand" href="index.html">Red Cards Limited</a>
+                            <a href="index.html" class="logoAtNav"><img alt="" src="img/logo.png" width="50px" height="50px"/></a>
+                        </div>
+                    </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                        </ul>
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="I'm shopping for..." id="lgSearch">
+                                </div>
+                                    <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true" id="btSearch"></span></button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Aboutus.html">About Us</a></li>
+                                <li><a href="Contactus.html">Contact Us</a></li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn"><span class="glyphicon glyphicon-glyphicon glyphicon-user" aria-hidden="true"> </span><span id="canasta"> Account</span></a>
+                                        <div class="dropdown-content">
+                                            <a href="LoginBox.html">Log in</a>
+                                            <a href="RegisterBox.html">Register</a>
+                                        </div>
+                                </li>
+                                <li><a href="#"></a></li>
+                                <li><a href="Cart.html"><span class="glyphicon glyphicon-shopping-cart icono" aria-hidden="true"></span><span id="canasta"> Cart <span class="badge badge-danger">3</span></span></a></li>
+                            </ul>
+                    </div>
+
+                    <!-- /.navbar-collapse -->
+                </div>
+                        <!-- /.container-fluid -->
+            </nav>
+    </div>
+
+    <!--End Nav-bar-->
+
+    <!--Cart log out
+        <div class="navbar2">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart icono" aria-hidden="true"> </span><span id="canasta"> Cart</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span><span id="canasta"> Log out</span></a></li>              
+                </ul>
+            </div>
+        </div> <br/>
+    End Cart- Log out-->
+    
+    <!--Container-->
+    <div class="container">
+        <!--row 1-->
+        <div class="row">
+            <!--Navigation bar-->
+            <div class="col-md-12">
+                
+            </div>
+            <!--end navigation bar-->
+        </div>
+        <!--end Row 1-->
+            
+        <!--row 3-->
+        <div class="row">
+            <!--category-->
+            <div class="col-md-2">
+                <!--event-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                          <a href="#" class="list-group-item list-group-item-action active" align="center" style="background-color: #2E2E2E;"><strong>
+                            Category</strong>
+                          </a>
+                          <a href="Lunar.html" class="list-group-item list-group-item-action"><span style="background-color: red" class="badge badge-danger">2</span><span style="background-color: red" class="badge badge-danger">New</span>Lunar</a>
+                          <a href="Valentines.html" class="list-group-item list-group-item-action">Valentines</a>
+                          <a href="Halloween.html" class="list-group-item list-group-item-action">Halloween</a>
+                          <a href="FatherMother.html" class="list-group-item list-group-item-action">Family Day</a>
+                          <a href="Christmas.html" class="list-group-item list-group-item-action"><span style="background-color: red" class="badge badge-danger">1</span><span style="background-color: red" class="badge badge-danger">New</span>Christmas</a>
+                          <br>
+                        </div>
+                    </div>
+                </div>
+                <!--end event-->
+                <!--brand-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action active" align="center" style="background-color: #2E2E2E;"><strong>
+                        Brand</strong></a>
+                      <a href="Silvia.html" class="list-group-item list-group-item-action">Silvia</a>
+                      <a href="Scotland.html" class="list-group-item list-group-item-action"><span class="badge badge-danger"></span>Scotland</a>
+                      <a href="Paris.html" class="list-group-item list-group-item-action"><span style="background-color: red" class="badge badge-danger">3</span><span style="background-color: red" class="badge badge-danger">Hot</span>Paris</a>
+                </div>
+                    </div>
+                </div>
+                <!--end brand-->
+            </div>
+            <!--end category-->
+            <!--slide show-->
+            <div>
+                <div class="col-md-10" align="left">
+                    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+                        <!-- Loading Screen -->
+                        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+                        </div>
+                        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:960px;height:380px;overflow:hidden;">
+                            <div>
+                                <a href="view/ChirstmasView2.html"><img data-u="image" src="img/ChirstmasProduct2.jpg" /></a>
+                            </div>
+                            <div>
+                                <a href="view/HalloweenView3.html"><img data-u="image" src="img/HalloweenProduct3.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="view/ChirstmasView3.html"><img data-u="image" src="img/ChirstmasProduct3.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="view/SilviaView5.html"><img data-u="image" src="img/SilviaProduct5.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="view/FatherMotherView1.html"><img data-u="image" src="img/FatherProduct1.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="view/FatherMotherView2.html"><img data-u="image" src="img/FatherProduct2.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="view/ChirstmasView1.html"><img data-u="image" src="img/ChirstmasProduct1.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="view/FatherMotherView4.html"><img data-u="image" src="img/MotherProduct1.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="view/FatherMotherView6.html"><img data-u="image" src="img/MotherProduct3.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="view/ScotlandView4.html"><img data-u="image" src="img/ScotlandProduct4.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="view/SilviaView6.html"><img data-u="image" src="img/SilviaProduct6.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="view/ValentinesView5.html"><img data-u="image" src="img/ValentinesProduct5.jpg" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Bullet Navigator -->
+                        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- Arrow Navigator -->
+                        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                            </svg>
+                        </div>
+                        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <script type="text/javascript">jssor_1_slider_init();</script>
+                </div>
+            </div>
+            <!--end slide show-->
+        </div><hr />
+        <!--end row 3-->
+    </div>
+    <!--End Container-->
+    <!--container 2-->
+        <div class="container">
+        <div class="row">
+            <!--product 1-->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="view/HalloweenView1.html">
+                                <img src="img/HalloweenProduct1.jpg" class="product" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productname">Halloween's Day 01</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productbutton">
+                                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span> $5</a> <a href="view/HalloweenView1.html" class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Details</a></p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            <!--end product 1-->
+            <!--product 2-->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="view/HalloweenView2.html">
+                                <img src="img/HalloweenProduct2.jpg" class="product" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productname">Halloween's Day 02</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productbutton">
+                                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span> $5</a> <a href="view/HalloweenView2.html" class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Details</a></p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            <!--end product 2-->
+            <!--product 3-->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="view/HalloweenView3.html">
+                                <img src="img/HalloweenProduct3.jpg" class="product" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productname">Halloween's Day 03</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productbutton">
+                                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span> $5</a> <a href="view/HalloweenView3.html" class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Details</a></p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            <!--end product 3-->
+        </div>
+        <!--end row 3-->
+        <!--row 4 - product's row 2-->
+        <div class="row">
+            <!--product 4-->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="view/HalloweenView4.html">
+                                <img src="img/HalloweenProduct4.jpg" class="product" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productname">Halloween's Day 04</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productbutton">
+                                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span> $5</a> <a href="view/HalloweenView4.html" class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Details</a></p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            <!--end product 4-->
+            <!--product 5-->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="view/HalloweenView5.html">
+                                <img src="img/HalloweenProduct5.jpg" class="product" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productname">Halloween's Day 05</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productbutton">
+                                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span> $5</a> <a href="view/HalloweenView5.html" class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Details</a></p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            <!--end product 5-->
+            <!--product 6-->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="view/HalloweenView6.html">
+                                <img src="img/HalloweenProduct6.jpg" class="product" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productname">Halloween's Day 06</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="productbutton">
+                                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span> $5</a> <a href="view/HalloweenView6.html" class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Details</a></p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            <!--end product 6-->
+        </div>
+        <!--end row 4-->
+    <hr>
+    </div>
+    <!--end container 2-->
+    <footer>
+       <div class="jumbotron text-center">
+                <h3>&copy Red Cards Limit</h3>
+            </div> 
+    </footer>      
+</body>
+</html>
