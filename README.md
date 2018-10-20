@@ -23,7 +23,7 @@ Browser (Firefox, Google Chrome, Safari, Chromium, IE, Microsoft Edge, etc)
 
 ### Installing
 
-Extract file zip, and open file:
+Extract file zip, and open file with your browser:
 
 ```
 index.html
