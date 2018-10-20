@@ -52,7 +52,7 @@ See also the list of [contributors](https://github.com/nhuduy/eProjectSem1Aptech
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/nhuduy/eProjectSem1AptechCardsSpecial/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
