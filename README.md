@@ -4,7 +4,7 @@ eProject Cards_Special
 # Project Title
 
 This is eProject at Semester 1 Aptech. Web front-end. 
-# Our team member:
+# Our team members:
 * [Tran Nhu Duy](https://github.com/nhuduy)
 * [Do Quang Minh](#)
 * [Luu Ngoc Ngan](https://github.com/ngaylangthangg)
