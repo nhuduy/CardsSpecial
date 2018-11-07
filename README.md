@@ -32,7 +32,7 @@ index.html
 
 * [Bootstrap](https://getbootstrap.com/) - The framework of JavaScript
 * [Jssor Slider](https://www.jssor.com/)
-* [HTML5, CSS, JavaScript, Angular]
+* [HTML5, CSS, JavaScript, Angular JS]
 
 ## Contributing
 
