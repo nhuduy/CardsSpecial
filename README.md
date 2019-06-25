@@ -1,5 +1,6 @@
-# eProjectSem1AptechCardsSpecial
-eProject Cards_Special
+# eProject Semeter 1 Aptech
+# Subject: CardsSpecial
+
 
 # Project Title
 
@@ -44,9 +45,9 @@ It's last version. It will be development by our team
 
 ## Authors
 
-* **Tran Nhu Duy** - (https://github.com/nhuduy)
-* **Do Quang Minh**  
-* **Luu Ngoc Ngan** - (https://github.com/ngaylangthangg)
+* [Tran Nhu Duy](https://github.com/nhuduy)
+* [Do Quang Minh](#)
+* [Luu Ngoc Ngan](https://github.com/ngaylangthangg)
 
 See also the list of [contributors](https://github.com/nhuduy/eProjectSem1AptechCardsSpecial/contributors) who participated in this project.
 
