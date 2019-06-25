@@ -1,5 +1,4 @@
-# eProject Semeter 1 Aptech
-# Subject: CardsSpecial
+# eProject Semeter 1 at Aptech - Subject: Cards Special
 
 
 # Project Title
