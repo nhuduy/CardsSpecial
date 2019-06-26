@@ -7,7 +7,7 @@ This is eProject at Semester 1 Aptech. Web front-end.
 # Our team members:
 * [Tran Nhu Duy](https://github.com/nhuduy)
 * [Do Quang Minh](https://github.com/minhdo501)
-* [Luu Ngoc Ngan](https://github.com/ngaylangthangg)
+* [Luu Ngoc Ngan](https://github.com/lnngana17001)
 
 ## Getting Started
 
@@ -44,9 +44,9 @@ It's last version. It will be development by our team
 
 ## Authors
 
-* **Tran Nhu Duy** - (https://github.com/nhuduy)
-* **Do Quang Minh** - (https://github.com/minhdo501)
-* **Luu Ngoc Ngan** - (https://github.com/lnngana17001)
+* [Tran Nhu Duy](https://github.com/nhuduy)
+* [Do Quang Minh](https://github.com/minhdo501)
+* [Luu Ngoc Ngan](https://github.com/lnngana17001)
 
 See also the list of [contributors](https://github.com/nhuduy/eProjectSem1AptechCardsSpecial/contributors) who participated in this project.
 
