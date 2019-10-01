@@ -1,5 +1,6 @@
-# eProjectSem1AptechCardsSpecial
-eProject Cards_Special
+# eProject name: Cards Special
+## Semeter: 1
+
 
 # Project Title
 
